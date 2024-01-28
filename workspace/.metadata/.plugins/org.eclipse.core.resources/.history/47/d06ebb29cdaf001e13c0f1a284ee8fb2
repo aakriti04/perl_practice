@@ -1,0 +1,11 @@
+use strict;
+use warnings;
+
+use File::Copy;
+
+$|=1;
+sub main {
+	
+	
+}
+main();

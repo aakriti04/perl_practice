@@ -1,0 +1,3 @@
+On cmd:
+	C:\Users\ADMIN>perl -e "print \"Hello world!\n\";"
+	Hello world!

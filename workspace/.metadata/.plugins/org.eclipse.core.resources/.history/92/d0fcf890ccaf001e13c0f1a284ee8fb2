@@ -1,0 +1,13 @@
+use strict;
+use warnings;
+
+use File::Copy;
+
+$|=1;
+sub main {
+	if (copy('F:\aakriti\Perl\collaterals\story.txt','F:\aakriti\Perl\collaterals\story_copy.txt')){
+		
+	}
+	
+}
+main();

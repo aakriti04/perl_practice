@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;basics/regexp.pl&apos; to &apos;regexp_test.pl&apos;" description="Rename resource &apos;regexp.pl&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="regexp.pl" name="regexp_test.pl" stamp="1688488505598" updateReferences="true"/>
+</session>

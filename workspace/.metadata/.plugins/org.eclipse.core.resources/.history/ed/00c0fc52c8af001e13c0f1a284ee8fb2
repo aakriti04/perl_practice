@@ -1,0 +1,6 @@
+On cmd:
+	C:\Users\ADMIN>perl -e "print \"Hello world!\n\";"
+	Hello world!
+On cygwin/linux:
+	C:\Users\ADMIN>perl -e 'print "Hello world!\n";'
+Hello world!

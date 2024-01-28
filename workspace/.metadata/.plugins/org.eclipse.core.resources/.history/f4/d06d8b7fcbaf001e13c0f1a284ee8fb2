@@ -1,0 +1,43 @@
+On cmd:
+	C:\Users\ADMIN>perl -e "print \"Hello world!\n\";"
+	Hello world!
+On cygwin/linux:
+	C:\Users\ADMIN>perl -e 'print "Hello world!\n";'
+	Hello world!
+	
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ perl -e 'open(my $fh, ">>", "story.txt") or die "Could not open file: $!"; print $fh "Once upon a time, in a land far, far away, there was a brave adventurer. "; print $fh "This adventurer embarked on a journey to explore mysterious forests, climb towering mountains, and discover hidden treasures. "; print $fh "Along the way, they encountered magical creatures, forged alliances with wise wizards, and faced daunting challenges. "; print $fh "After many adventures, our hero triumphantly returned home, carrying tales of bravery and the wonders of the world. The end.\n"; close $fh;'
+
+
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ perl -p -e '' story.txt
+	Once upon a time, in a land far, far away, there was a brave adventurer. This adventurer embarked on a journey to explore mysterious forests, climb towering mountains, and discover hidden treasures. Along the way, they encountered magical creatures, forged alliances with wise wizards, and faced daunting challenges. After many adventures, our hero triumphantly returned home, carrying tales of bravery and the wonders of the world. The end.
+
+
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ perl -pe 's/\ba\b/TEST/gi' story.txt
+	Once upon TEST time, in TEST land far, far away, there was TEST brave adventurer. This adventurer embarked on TEST journey to explore mysterious forests, climb towering mountains, and discover hidden treasures. Along the way, they encountered magical creatures, forged alliances with wise wizards, and faced daunting challenges. After many adventures, our hero triumphantly returned home, carrying tales of bravery and the wonders of the world. The end.
+
+
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ perl -pe 's/\ba\b/TEST/gi' *.txt
+	Once upon TEST time, in TEST land far, far away, there was TEST brave adventurer. This adventurer embarked on TEST journey to explore mysterious forests, climb towering mountains, and discover hidden treasures. Along the way, they encountered magical creatures, forged alliances with wise wizards, and faced daunting challenges. After many adventures, our hero triumphantly returned home, carrying tales of bravery and the wonders of the world. The end.
+
+
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ perl -i.orig -pe 's/\ba\b/TEST/gi' story.txt
+
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ ls
+	input/  story.txt  story.txt.orig  test_1.xml
+
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ cat story.txt.orig
+	Once upon a time, in a land far, far away, there was a brave adventurer. This adventurer embarked on a journey to explore mysterious forests, climb towering mountains, and discover hidden treasures. Along the way, they encountered magical creatures, forged alliances with wise wizards, and faced daunting challenges. After many adventures, our hero triumphantly returned home, carrying tales of bravery and the wonders of the world. The end.
+
+ADMIN@DESKTOP-PR2GN8O MINGW64 /f/aakriti/Perl/collaterals
+$ cat story.txt
+	Once upon TEST time, in TEST land far, far away, there was TEST brave adventurer. This adventurer embarked on TEST journey to explore mysterious forests, climb towering mountains, and discover hidden treasures. Along the way, they encountered magical creatures, forged alliances with wise wizards, and faced daunting challenges. After many adventures, our hero triumphantly returned home, carrying tales of bravery and the wonders of the world. The end.
+
+	
+	
